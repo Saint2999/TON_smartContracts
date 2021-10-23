@@ -1,0 +1,84 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "createToken",
+			"inputs": [
+				{"name":"heroName","type":"string"},
+				{"name":"age","type":"uint8"},
+				{"name":"isAlive","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getTokenOwner",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getTokenInfo",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"heroName","type":"string"},
+				{"name":"age","type":"uint8"},
+				{"name":"isAlive","type":"bool"},
+				{"name":"onSale","type":"bool"}
+			]
+		},
+		{
+			"name": "getTokenPrice",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "changeOwner",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"},
+				{"name":"pubKeyOfNewOwner","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "changePrice",
+			"inputs": [
+				{"name":"tokenId","type":"uint256"},
+				{"name":"newPrice","type":"uint256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"components":[{"name":"heroName","type":"string"},{"name":"age","type":"uint8"},{"name":"isAlive","type":"bool"},{"name":"onSale","type":"bool"}],"name":"tokenArray","type":"tuple[]"},
+		{"name":"tokenToOwner","type":"map(uint256,uint256)"},
+		{"name":"tokenPrice","type":"map(uint256,uint256)"}
+	]
+}
