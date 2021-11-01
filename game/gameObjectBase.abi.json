@@ -1,0 +1,75 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addMilitaryUnit",
+			"inputs": [
+				{"name":"militaryUnit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "removeMilitaryUnit",
+			"inputs": [
+				{"name":"militaryUnit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "gameObjectDeath",
+			"inputs": [
+				{"name":"attackerAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "getDefense",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "takeDamage",
+			"inputs": [
+				{"name":"attack","type":"int256"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"int256"},
+		{"name":"defense","type":"int256"},
+		{"name":"militaryUnitMap","type":"map(uint256,address)"},
+		{"name":"mapLength","type":"uint256"}
+	]
+}

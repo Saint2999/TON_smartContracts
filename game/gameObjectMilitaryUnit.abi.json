@@ -1,0 +1,69 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "getAttack",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "getHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "getDefense",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "attackGameObject",
+			"inputs": [
+				{"name":"tempGameObjectAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "takeDamage",
+			"inputs": [
+				{"name":"attack","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"int256"},
+		{"name":"defense","type":"int256"},
+		{"name":"attack","type":"int256"},
+		{"name":"owner","type":"address"},
+		{"name":"baseAddress","type":"address"},
+		{"name":"militaryUnitAddress","type":"address"}
+	]
+}
