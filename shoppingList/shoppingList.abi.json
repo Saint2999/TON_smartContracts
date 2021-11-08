@@ -1,0 +1,60 @@
+{
+	"ABI version": 2,
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"pubkey","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPurchases",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"id","type":"uint32"},{"name":"name","type":"bytes"},{"name":"quantity","type":"uint8"},{"name":"time","type":"uint32"},{"name":"isPurchased","type":"bool"},{"name":"fullPrice","type":"uint32"}],"name":"purchases","type":"tuple[]"}
+			]
+		},
+		{
+			"name": "addPurchase",
+			"inputs": [
+				{"name":"name","type":"bytes"},
+				{"name":"quantity","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deletePurchase",
+			"inputs": [
+				{"name":"id","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "updatePurchase",
+			"inputs": [
+				{"name":"id","type":"uint32"},
+				{"name":"price","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getSummary",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"quantityOfPaidPurchases","type":"uint8"},{"name":"quantityOfUnpaidPurchases","type":"uint8"},{"name":"amountOfMoneySpent","type":"uint32"}],"name":"summary","type":"tuple"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}

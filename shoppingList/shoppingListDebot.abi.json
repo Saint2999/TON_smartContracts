@@ -1,0 +1,222 @@
+{
+	"ABI version": 2,
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "start",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "menu",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addPurchase",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addPurchasePleaseHelp",
+			"inputs": [
+				{"name":"stringQuantity","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addPurchasePlease",
+			"inputs": [
+				{"name":"name","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPurchases",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPurchasesPlease",
+			"inputs": [
+				{"components":[{"name":"id","type":"uint32"},{"name":"name","type":"bytes"},{"name":"quantity","type":"uint8"},{"name":"time","type":"uint32"},{"name":"isPurchased","type":"bool"},{"name":"fullPrice","type":"uint32"}],"name":"purchases","type":"tuple[]"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deletePurchase",
+			"inputs": [
+				{"name":"index","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deletePurchasePlease",
+			"inputs": [
+				{"name":"value","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setShoppingListCode",
+			"inputs": [
+				{"name":"code","type":"cell"},
+				{"name":"data","type":"cell"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "savePubkey",
+			"inputs": [
+				{"name":"value","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkStatus",
+			"inputs": [
+				{"name":"acc_type","type":"int8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setSummary",
+			"inputs": [
+				{"components":[{"name":"quantityOfPaidPurchases","type":"uint8"},{"name":"quantityOfUnpaidPurchases","type":"uint8"},{"name":"amountOfMoneySpent","type":"uint32"}],"name":"summary","type":"tuple"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "creditAccount",
+			"inputs": [
+				{"name":"value","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "waitBeforeDeploy",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkIfStatusIs0",
+			"inputs": [
+				{"name":"acc_type","type":"int8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onErrorRepeatCredit",
+			"inputs": [
+				{"name":"sdkError","type":"uint32"},
+				{"name":"exitCode","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onSuccess",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onErrorRepeatDeploy",
+			"inputs": [
+				{"name":"sdkError","type":"uint32"},
+				{"name":"exitCode","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onError",
+			"inputs": [
+				{"name":"sdkError","type":"uint32"},
+				{"name":"exitCode","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDebotInfo",
+			"id": "0xDEB",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"name","type":"bytes"},
+				{"name":"version","type":"bytes"},
+				{"name":"publisher","type":"bytes"},
+				{"name":"key","type":"bytes"},
+				{"name":"author","type":"bytes"},
+				{"name":"support","type":"address"},
+				{"name":"hello","type":"bytes"},
+				{"name":"language","type":"bytes"},
+				{"name":"dabi","type":"bytes"},
+				{"name":"icon","type":"bytes"}
+			]
+		},
+		{
+			"name": "getRequiredInterfaces",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"interfaces","type":"uint256[]"}
+			]
+		},
+		{
+			"name": "getDebotOptions",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"options","type":"uint8"},
+				{"name":"debotAbi","type":"bytes"},
+				{"name":"targetAbi","type":"bytes"},
+				{"name":"targetAddr","type":"address"}
+			]
+		},
+		{
+			"name": "setABI",
+			"inputs": [
+				{"name":"dabi","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}
